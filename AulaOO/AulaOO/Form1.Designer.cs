@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.txtValor = new System.Windows.Forms.TextBox();
+            this.btnDepositar = new System.Windows.Forms.Button();
+            this.btnSacar = new System.Windows.Forms.Button();
+            this.btnSaldo = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.lblmensagem = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -46,40 +46,42 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Informe um valor:";
             // 
-            // textBox1
+            // txtValor
             // 
-            this.textBox1.Location = new System.Drawing.Point(106, 15);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtValor.Location = new System.Drawing.Point(106, 18);
+            this.txtValor.Name = "txtValor";
+            this.txtValor.Size = new System.Drawing.Size(100, 20);
+            this.txtValor.TabIndex = 1;
             // 
-            // button1
+            // btnDepositar
             // 
-            this.button1.Location = new System.Drawing.Point(15, 89);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Despositar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnDepositar.Location = new System.Drawing.Point(15, 89);
+            this.btnDepositar.Name = "btnDepositar";
+            this.btnDepositar.Size = new System.Drawing.Size(75, 23);
+            this.btnDepositar.TabIndex = 2;
+            this.btnDepositar.Text = "Despositar";
+            this.btnDepositar.UseVisualStyleBackColor = true;
+            this.btnDepositar.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnSacar
             // 
-            this.button2.Location = new System.Drawing.Point(106, 89);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Sacar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnSacar.Location = new System.Drawing.Point(106, 89);
+            this.btnSacar.Name = "btnSacar";
+            this.btnSacar.Size = new System.Drawing.Size(75, 23);
+            this.btnSacar.TabIndex = 3;
+            this.btnSacar.Text = "Sacar";
+            this.btnSacar.UseVisualStyleBackColor = true;
+            this.btnSacar.Click += new System.EventHandler(this.btnSacar_Click);
             // 
-            // button3
+            // btnSaldo
             // 
-            this.button3.Location = new System.Drawing.Point(187, 89);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Saldo";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnSaldo.Location = new System.Drawing.Point(187, 89);
+            this.btnSaldo.Name = "btnSaldo";
+            this.btnSaldo.Size = new System.Drawing.Size(75, 23);
+            this.btnSaldo.TabIndex = 4;
+            this.btnSaldo.Text = "Saldo";
+            this.btnSaldo.UseVisualStyleBackColor = true;
+            this.btnSaldo.Click += new System.EventHandler(this.btnSaldo_Click);
             // 
             // label2
             // 
@@ -105,10 +107,10 @@
             this.ClientSize = new System.Drawing.Size(388, 370);
             this.Controls.Add(this.lblmensagem);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnSaldo);
+            this.Controls.Add(this.btnSacar);
+            this.Controls.Add(this.btnDepositar);
+            this.Controls.Add(this.txtValor);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -120,10 +122,10 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox txtValor;
+        private System.Windows.Forms.Button btnDepositar;
+        private System.Windows.Forms.Button btnSacar;
+        private System.Windows.Forms.Button btnSaldo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblmensagem;
     }

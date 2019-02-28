@@ -32,13 +32,15 @@ namespace AulaOO
             this.saldo += mvalor;
         }
 
-        public int Sacar(float mvalor)
+        public void Sacar(float mvalor)
         {
             this.saldo -= mvalor;
         }
 
         public float ObterSaldo()
-        { return (saldo); }
+        {
+            return this.saldo;
+        }
 
 
         public int Numero { get => numero; set => numero = value; }
